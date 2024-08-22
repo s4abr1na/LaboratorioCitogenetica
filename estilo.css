@@ -121,19 +121,64 @@ footer a:hover{
 }
 
 #bloco-registro {
+	display: flex;
+	flex-direction: column;
 	background-color: #5B9BB5;
-	width: 718px;
+	width: 720px;
 	height: 100vh;
+	align-items: center;
+	justify-content: center;
 }
 
 #titulo-registro {
 	font-family: "Jost", sans-serif;
-	font-style: normal;
+	font-weight: 200;
+	color: #F8F5F5;
 }
 
-#bloco-imagem {
-	background-color: #FFF;
+#box-form-registro {
+	display: flex;
+	background-color: #5B9BB5;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+}
 
+#form-registro {
+	display: flex;
+	flex-direction: column;
+	height: 450px;
+	width: 475px;
+	align-items: center;
+	justify-content: center;
+}
+
+.registro-input{
+	width: 450px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: #F8F5F5;
+	border: 1px solid lightgray;
+	margin-top: 10px;
+}
+
+.registro-input::placeholder {
+	font-family: 'Jost', sans-serif;
+	color: rgba(0, 0, 0, 0.44);
+}
+
+#submit-registro {
+	width: 100px;
+	height: 32px;
+	background-color: #F8F5F5;
+	border-radius: 6px;
+	border: 1px solid lightgray;
+	box-shadow: 0px 3px gray;
+	margin-top: 30px;
+}
+
+#bloco-imagens-registro {
+	background-color: #FFF;
 }
 
 .bt-voltar {
@@ -144,7 +189,7 @@ footer a:hover{
 	top: 20px;
 	right: 20px;
 	background-color: #F8F5F5;
-	box-shadow: 0px 4px lightgray;
+	box-shadow: 0px 3px gray;
 	border-radius: 22px;
 	height: 35px;
 	width: 100px;
@@ -160,4 +205,9 @@ footer a:hover{
 #imagem-registro {
 	height: 549px;
 	width: 493px;
+	position: absolute;
+	bottom: 0;
+	right: 5px;
 }
+
+/* Aqui termina a estilização da página de registro */
