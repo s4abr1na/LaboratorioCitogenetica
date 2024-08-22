@@ -112,3 +112,18 @@ footer a{
 footer a:hover{
 	color: #82572C;
 }
+
+/*LOGIN*/
+#container-login{
+	display: flex;
+
+}
+
+#bloco-imagem-login{
+	height: 100vh;
+}
+
+#bloco-texto-login{
+	background-color: #000;
+	height: 100vh;
+}
