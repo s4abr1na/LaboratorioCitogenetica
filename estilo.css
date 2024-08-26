@@ -123,7 +123,7 @@ footer a:hover{
 #bloco-registro {
 	display: flex;
 	flex-direction: column;
-	background-color: #5B9BB5;
+	background-color: #0062AE;
 	width: 720px;
 	height: 100vh;
 	align-items: center;
@@ -138,7 +138,7 @@ footer a:hover{
 
 #box-form-registro {
 	display: flex;
-	background-color: #5B9BB5;
+	background-color: #0062AE;
 	padding: 0;
 	align-items: center;
 	justify-content: center;
