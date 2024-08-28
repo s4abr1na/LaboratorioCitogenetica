@@ -324,10 +324,10 @@ footer a:hover{
 	justify-content: center;
 }
 
-main .titulo {
+#bloco-registro .titulo {
 	font-family: "Jost", sans-serif;
 	font-weight: 300;
-	color: #6E6E6E;
+	color: #F8F5F5;
 }
 
 #box-form-registro {
@@ -551,12 +551,20 @@ form{
 	flex-direction: column;
 }
 
+#box-situacao .titulo {
+	font-family: 'Jost', sans-serif;
+	color: #6E6E6E;
+	font-weight: 300;
+	margin: 30px 0px 15px 0px;
+}
+
 #box-interacao {
 	display: flex;
 	justify-content:left;
 	flex-direction: column;
 	background-color: #FFF;
 	width: fit-content;
+	margin: 15px 0px 30px 0px;
 }
 
 #bt-add-exame {
@@ -679,7 +687,7 @@ form{
 	border-radius: 22px;
 	height: 35px;
 	width: 250px;
-	margin-top: 50px;
+	margin: 50px 0px;
 }
 
 .bt-home a {
