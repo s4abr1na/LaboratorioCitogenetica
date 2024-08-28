@@ -324,10 +324,10 @@ footer a:hover{
 	justify-content: center;
 }
 
-main .titulo {
+#bloco-registro .titulo {
 	font-family: "Jost", sans-serif;
 	font-weight: 300;
-	color: #6E6E6E;
+	color: #F8F5F5;
 }
 
 #box-form-registro {
@@ -410,6 +410,126 @@ main .titulo {
 
 /* Aqui termina a estilização da página de registro */
 
+/*PÁGINA DE LOGIN*/
+
+#container-login{
+	display: flex;
+
+}
+
+.bt-voltar-login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	background-color: #FFF;
+	box-shadow: 0px 3px gray;
+	border-radius: 22px;
+	height: 35px;
+	width: 100px;
+}
+
+.bt-voltar-login a {
+	font-family: "Jost", sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	color: #000;
+}
+
+#bloco-imagem-login{
+	height: 100vh;
+}
+
+#bloco-texto-login{
+	background-color: #0062AE;
+	height: 100vh;
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#titulo-login {
+	font-family: "Jost", sans-serif;
+	font-weight: 200;
+	color: #F8F5F5;
+}
+
+form{
+	width: 400px;
+}
+
+.login-input{
+	width: 450px;
+	height: 45px;
+	border-radius: 5px;
+	background-color: #F8F5F5;
+	border: 1px solid lightgray;
+	margin-top: 20px;
+	font-family: 'Jost', sans-serif;
+	color: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+}
+
+.login-input::placeholder {
+	font-family: 'Jost', sans-serif;
+	color: rgba(0, 0, 0, 0.44);
+	padding: 5px;
+}
+
+#box-form-login {
+	display: flex;
+	background-color: #0062AE;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+#submit-login {
+	width: 100px;
+	height: 32px;
+	background-color: #F8F5F5;
+	border-radius: 6px;
+	border: 1px solid lightgray;
+	box-shadow: 0px 3px gray;
+	margin-top: 30px;
+}
+
+#img-login{
+	width: 600px;
+	height: 600px;
+	margin: 20px;
+}
+
+#img-login-div{
+	background-color: #F7F7F7;
+}
+
+.link-login {
+    text-align: center;
+    display: flex;
+    margin: 20px;
+}
+
+.a-login {
+    display: block;
+    margin: 5px 0;
+    color: #FFF;
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+	font-style: normal;
+}
+
+.a-login:hover {
+    text-decoration: underline;
+    color: #C8DBEB;
+}
+
+/*AQUI TERMINA O LOGIN*/
+
 /* Estilização da página de situação dos exames */
 
 .navbar {
@@ -431,12 +551,20 @@ main .titulo {
 	flex-direction: column;
 }
 
+#box-situacao .titulo {
+	font-family: 'Jost', sans-serif;
+	color: #6E6E6E;
+	font-weight: 300;
+	margin: 30px 0px 15px 0px;
+}
+
 #box-interacao {
 	display: flex;
 	justify-content:left;
 	flex-direction: column;
 	background-color: #FFF;
 	width: fit-content;
+	margin: 15px 0px 30px 0px;
 }
 
 #bt-add-exame {
@@ -559,7 +687,7 @@ main .titulo {
 	border-radius: 22px;
 	height: 35px;
 	width: 250px;
-	margin-top: 50px;
+	margin: 50px 0px;
 }
 
 .bt-home a {
