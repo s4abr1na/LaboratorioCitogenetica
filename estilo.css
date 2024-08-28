@@ -8,6 +8,11 @@ nav{
 	padding: 30px;
 }
 
+.logo {
+	width: 190px;
+	height: 100px;
+}
+
 .a-menu{
 	margin-right: 30px;
 	font-size: 1.2em;
@@ -97,8 +102,12 @@ section{
 }
 
 footer{
-	background-color: #093A47;
+	display: flex;
+	background-color: #0062AE;
 	padding: 10px;
+	height: 25px;
+	justify-content: center;
+	align-items: center;
 }
 
 footer p{
@@ -108,10 +117,11 @@ footer p{
 
 footer a{
 	color: #FFF;
+	text-decoration: none;
 }
 
 footer a:hover{
-	color: #82572C;
+	color: #000;
 }
 
 /* Daqui pra baixo é a página de registro */
@@ -130,10 +140,10 @@ footer a:hover{
 	justify-content: center;
 }
 
-#titulo-registro {
+main .titulo {
 	font-family: "Jost", sans-serif;
-	font-weight: 200;
-	color: #F8F5F5;
+	font-weight: 300;
+	color: #6E6E6E;
 }
 
 #box-form-registro {
@@ -215,3 +225,162 @@ footer a:hover{
 }
 
 /* Aqui termina a estilização da página de registro */
+
+/* Estilização da página de situação dos exames */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #0062AE;
+}
+
+.user-profile {
+	height: 50px;
+	width: 50px;
+}
+
+#box-situacao {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#box-interacao {
+	display: flex;
+	justify-content:left;
+	flex-direction: column;
+	background-color: #FFF;
+	width: fit-content;
+}
+
+#bt-add-exame {
+	background-color: #F2F2F2;
+	width: 150px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 0px 2px lightgray;
+	margin: 10px 0px;
+}
+
+#add-box {
+	color: #F2F2F2;
+	background-color: #AAAAAA;
+	margin-right: 10px;
+}
+
+#bt-add-exame p {
+	font-family: "Jost", sans-serif;
+	color: #333333;
+	opacity: 0.81;
+}
+
+#barra-pesquisa {
+	background-color: #DEDEDE;
+	width: 700px;
+	height: 35px;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0px;
+}
+
+#icon-lupa {
+	color: #3E3E3E;
+}
+
+#barra-pesquisa input{
+	border: 0px transparent;
+	background-color: #DEDEDE;
+	width: 450px;
+	height: 25px;
+	font-family: "Jost", sans-serif;
+	color: #333333;
+	margin-left: 7px;
+}
+
+#filtros {
+	display: flex;
+	background-color: #0062AE;
+	align-items: center;
+	justify-content: space-around;
+	width: 700px;
+	border-radius: 8px;
+}
+
+#filtros p {
+	color: white;
+}
+
+#filtros p span {
+	margin-left: 4px;
+}
+
+#tabela-pacientes {
+	background-color: #FFF;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+.card-lab {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F1DAC4;
+	width: 800px;
+	height: 75px;
+	margin: 5px 0px;
+	border-radius: 10px;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.card-lab p {
+	color: #000;
+	font-weight: 500;
+	font-family: "Jost", sans-serif;
+}
+
+.card-pronto {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(0, 98, 174, 0.71);
+	width: 800px;
+	height: 75px;
+	margin: 5px 0px;
+	border-radius: 10px;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.card-pronto p {
+	color: #000;
+	font-weight: 500;
+	font-family: "Jost", sans-serif;
+}
+
+.bt-home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #F8F5F5;
+	box-shadow: 0px 3px gray;
+	border-radius: 22px;
+	height: 35px;
+	width: 250px;
+	margin-top: 50px;
+}
+
+.bt-home a {
+	font-family: "Jost", sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	color: #000;
+}
