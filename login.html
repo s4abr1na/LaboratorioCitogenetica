@@ -8,31 +8,39 @@
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<title>Login</title>
 	</head>
+	
 	<body>
-
-
 		<div id="container-login">
 			<aside id="bloco-imagem-login">
-				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<span class="bt-voltar-login">
+	                    <ion-icon name="chevron-back-outline"></ion-icon>
+	                    <a href="index.html">VOLTAR</a>        
+                	</span>
+                <div id="img-login-div">
+                	<img id="img-login" src="img/img-login.jpg">
+                </div>
 			</aside>
 
 
 			<main id="bloco-texto-login">
-				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h1 id="titulo-login">Faça seu Login</h1>
+				<section id="box-form-login">
+					<form action="#" id="form-registro">
+						<input class="login-input" type="text" name="nome" placeholder="CPF ou Nº do SES" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required autofocus value=""/>
+						<input class="login-input" type="password" name="senha" placeholder="Senha">
+
+						<div class="link-login">
+							<a class="a-login" href="registro.html">Cadastre-se</a>
+							<a class="a-login" href="recuperarSenha.html">Esqueci minha senha</a>
+							<!--Criar a página: "recuperarSenha"-->
+						</div>
+
+						<button type="submit" id="submit-login">Entrar</button>
+					</form>
+				</section>
 			</main>
 
 		</div>
-
-
 	</body>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </html>
