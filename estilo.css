@@ -2,10 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 *{margin: 0; padding: 0;}
 
+#header-home {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 30px;
+	align-items: center;
+	background-color: #FFF;
+}
+
+#header-home img {
+	height: 160px;
+	width: 250px;
+}
+
+#header-home h1 {
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+}
+
+#header-home h2 {
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+}
+
 nav{
-	background-color: #feecc7;
-	text-align: right;
-	padding: 30px;
+	display: flex;
+	background-color: #0062AE;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo {
@@ -14,91 +39,249 @@ nav{
 }
 
 .a-menu{
-	margin-right: 30px;
+	margin: 0px 60px;
 	font-size: 1.2em;
-	font-family: 'Montserrat', sans-serif;;
+	font-family: 'Jost', sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: 300;
 }
 
-.a-menu:link, .a-menu:visited{
-	color: #c29970;
+.a-menu:hover{
+	color: #000;
 }
 
-.a-menu:hover, .a-menu:active{
-	color: #a5493a;
-}
-
-main{
+#home-main{
+	display: flex;
 	width: 100%;
 	background-color: #FFF;
 	padding: 20px;
 	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
-h2{
-	font-family: 'DM Serif Text', serif;
-	font-size: 2rem;
-	color: #c29970;
-	text-align: left;
-	margin-bottom: 30px;
+#home-main h2 {
+	text-align: center;
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.63);
 }
 
-p{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1rem;
-	color: #666;
+#home-main article {
+	padding: 50px;
+}
+
+#home-main article p{
+	font-family: 'Jost', sans-serif;
+	font-size: 1.1rem;
+	color: #000;
 	text-align: justify;
-	line-height: 30px;
+	font-weight: 350;
 }
 
 #container{
 	display: flex;
 	margin-top: 15px;
 	margin-bottom: 20px;
-	text-align: center;
+	width: fit-content;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .card{
 	background-color: #CCC;
 	margin: 10px;
-	width: 25%;
+	width: 250px;
+	height: 400px;
 	border-radius: 8px;
 	box-shadow: 0px 4px 8px #CCC;
 	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
+	margin: 20px 50px;
 }
 
 .card:hover{
-	box-shadow: 0px 8px 16px #CCC;
+	box-shadow: 8px 16px 26px #CCC;
 }
 
-.card-content{
+.main-card-content {
+	background-color: #0062AE;
+	width: 250px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.main-card-content p{
+	font-family: 'Jost', sans-serif;
 	padding: 10px;
+	color: #FFF;
+	font-size: 0.9rem;
+	font-weight: 300;
 }
 
-.card-content p{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1rem;
-	line-height: 20px;
-}
-
-section{
-	width: 100%;
-	background-color: #feecc7;
-	padding: 20px;
-	box-sizing: border-box;
-}
-
-#container-medico{
+#pag-unidades {
 	display: flex;
-	margin-top: 15px;
-	margin-bottom: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #0062AE;
+}
+
+#pag-unidades h2 {
+	font-family: 'Jost', sans-serif;
+	color: #FFF;
+	font-weight: 400;
+	margin: 80px 0px 40px 0px;
+}
+
+#container-unidades {
+	display: flex;
+	width: 850px;
+	height: fit-content;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 40px 0px 80px 0px;
+}
+
+.separacao {
+	display: flex;
+	flex-direction: row;
+}
+
+.card-unidades {
+	display: flex;
+	background-color: #FFF;
+	width: 400px;
+	height: 450px;
+	align-items: center;
+	justify-content: end;
+	margin: 20px 20px;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+.card-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #D9D9D9;
+	width: 400px;
+	height: 50px;
+	font-family: 'Jost', sans-serif;
+	color: #000;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+#pag-como-chegar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#pag-como-chegar h1 {
+	font-family: 'Jost', sans-serif;
+	color: rgba(0, 0, 0, 0.67);
+	font-weight: 500;
+	margin: 40px;
+}
+
+#pag-como-chegar iframe {
+	width: 700px;
+	height: 450px;
+}
+
+#info-loc {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 90vw;
+	justify-content: space-between;
+}
+
+#info-loc img {
+	height: 400px;
+	width: 500px;
+}
+
+#info-loc h2 {
+	background-color: #E6E6E6;
+	font-family: 'Jost', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#pag-perguntas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #0062AE;
+}
+
+.card-perguntas {
+	display: flex;
+	background-color: #F8F5F5;
+	height: 90px;
+	width: 450px;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	margin: 20px 20px;
+	color: rgba(0, 0, 0, 0.46);
+}
+
+#pag-duvidas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: fit-content;
+}
+
+#art-duvidas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Jost', sans-serif;
+	margin: 40px 0px 10px 0px;
+}
+
+#art-duvidas h1 {
+	font-size: 1.5rem;
+	font-weight: 450;
+}
+
+.contatos {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	width: 150px;
+	background-color: #D9D9D9;
+	border-radius: 10px;
+	box-shadow: 2px 2px lightgray;
+	margin: 30px 0px;
 	text-align: center;
 }
 
-.card-medico{
-	background-color: #FFF;
-	margin: 30px;
-	width: 25%;
-	border-radius: 8px;
+.contatos p {
+	font-family: 'Jost', sans-serif;
 }
 
 footer{
@@ -109,6 +292,7 @@ footer{
 	justify-content: center;
 	align-items: center;
 }
+
 
 footer p{
 	text-align: center;
