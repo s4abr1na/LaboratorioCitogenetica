@@ -7,7 +7,8 @@
 	justify-content: space-between;
 	padding: 0px 30px;
 	align-items: center;
-	background-color: rgba(0, 98, 174, 0.71);
+	background-color: #FFF;
+	background-color: #488BBF;
 }
 
 #header-home img {
@@ -19,12 +20,14 @@
 	font-family: 'Jost', sans-serif;
 	font-weight: 500;
 	font-size: 2.5rem;
+	color: #FFF;
 }
 
 #header-home h2 {
 	font-family: 'Jost', sans-serif;
 	font-weight: 500;
 	font-size: 2.3rem;
+	color: #FFF;
 }
 
 nav{
@@ -84,6 +87,20 @@ nav{
 	font-weight: 350;
 }
 
+ul{
+	list-style-type: circle;
+	padding:20px 50px;
+}
+
+li{
+	font-family: 'Jost', sans-serif;
+	font-size: 1.1rem;
+	color:#000;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+
 #container{
 	display: flex;
 	margin-top: 15px;
@@ -93,10 +110,15 @@ nav{
 	justify-content: space-evenly;
 }
 
+.imagem-card{
+	width: 350px;
+	height: 400px;
+}
+
 .card{
 	background-color: #CCC;
 	margin: 10px;
-	width: 250px;
+	width: 350px;
 	height: 400px;
 	border-radius: 8px;
 	box-shadow: 0px 4px 8px #CCC;
@@ -114,7 +136,7 @@ nav{
 
 .main-card-content {
 	background-color: #0062AE;
-	width: 250px;
+	width: 350px;
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
@@ -153,24 +175,20 @@ nav{
 	margin: 40px 0px 80px 0px;
 }
 
-.separacao {
-	display: flex;
-	flex-direction: row;
-}
-
 .card-unidades {
 	display: flex;
 	background-color: #FFF;
-	width: 400px;
-	height: 450px;
+	/*width: 400px;
+	height: 450px;*/
 	align-items: center;
 	justify-content: end;
 	margin: 20px 20px;
-	flex-direction: column;
+	/*flex-direction: column;*/
 	border-radius: 8px;
 }
 
-.card-content {
+
+/*.card-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -184,7 +202,28 @@ nav{
 	text-align: center;
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
+}*/
+
+.logo-unidade{
+	width: 300px;
+	height: 300px;
+	padding: 20px;
 }
+
+.coluna-texto-unidade p{
+	text-align: justify;
+	padding: 30px;
+	font-family: 'Jost', sans-serif;
+	font-size: 1.1rem;
+}
+
+.coluna-texto-unidade h2{
+	text-align: center;
+	padding: 20px;
+	color: #000;
+}
+
+
 
 #pag-como-chegar {
 	display: flex;
@@ -214,6 +253,20 @@ nav{
 	width: 90vw;
 	justify-content: space-between;
 }
+
+.texto-endereço{
+	background-color: #4685B6;
+	margin: 50px;
+	border-radius: 10px;
+}
+
+.texto-endereço p{
+	color: #FFF;
+	padding: 30px;
+	font-family: 'Jost', sans-serif;
+	font-size: 1.1rem;
+}
+
 
 #info-loc img {
 	height: 400px;
@@ -246,11 +299,16 @@ nav{
 	margin-bottom: 40px;
 }
 
+#pag-perguntas p {
+	font-size: 1.1rem;
+	font-family: 'Jost', sans-serif;
+}
+
 .card-perguntas {
 	display: flex;
 	background-color: #F8F5F5;
-	height: 90px;
-	width: 450px;
+	height: 50px;
+	width: 600px;
 	border-radius: 10px;
 	align-items: center;
 	justify-content: space-between;
@@ -267,6 +325,24 @@ nav{
 	height: 700px;
 }
 
+#pag-duvidas p{
+	font-size: 1.1rem;
+	font-family: 'Jost', sans-serif;
+	text-align: center;
+	justify-content: center;
+}
+
+.contatos-botao{
+	justify-content: center;
+}
+
+.container-duvida{
+	background-color: #E3EFFF;
+	height: 500px;
+	width: 800px;
+	border-radius: 30px;
+}
+
 #art-duvidas {
 	display: flex;
 	flex-direction: column;
@@ -279,6 +355,11 @@ nav{
 #art-duvidas p {
 	font-size: 1.7rem;
 	font-weight: 400;
+	text-align: center;
+}
+
+.texto-duvida{
+	text-align: center;
 }
 
 #art-duvidas h1 {
@@ -293,7 +374,7 @@ nav{
 	justify-content: center;
 	padding: 10px;
 	width: 200px;
-	background-color: #D9D9D9;
+	background-color: #4175B9;
 	border-radius: 10px;
 	box-shadow: 2px 2px lightgray;
 	margin: 30px 0px;
@@ -305,11 +386,35 @@ nav{
 	font-size: 1.3rem;
 }
 
+.contatos-botao{
+	Display: grid;
+	Align-itens: center;
+	Justify-content: center;
+	flex-direction: center;
+	padding: 30px;
+}
+
+.logo-rodape {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    background-color: 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+}
+
+.logo-rodape img {
+    max-height: 100px; 
+    object-fit: contain;
+}
+
 footer{
 	display: flex;
 	background-color: #0062AE;
 	padding: 10px;
-	height: 25px;
+	height: 40px;
 	justify-content: center;
 	align-items: center;
 }
@@ -319,6 +424,7 @@ footer p{
 	text-align: center;
 	color: #FFF;
 	font-family: 'Jost', sans-serif;
+	font-size: 1.2rem;
 }
 
 footer a{
@@ -327,7 +433,7 @@ footer a{
 }
 
 footer a:hover{
-	color: #000;
+	color: #FFED00;
 }
 
 /* Daqui pra baixo é a página de registro */
@@ -464,15 +570,15 @@ footer a:hover{
 }
 
 #bloco-imagem-login{
-	height: 80%;
-	width: 75%;
+	height: 600px;
+	width: 900px;
 	background-color: #FFF;
 }
 
 #bloco-texto-login{
 	background-color: #0062AE;
-	height: 100vh;
-	width: 50vw;
+	height: 625px;
+	width: 700px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -490,20 +596,15 @@ form{
 }
 
 .login-input{
-	width: 35vw;
-	height: 8vh;
-	border-radius: 8px;
+	width: 450px;
+	height: 45px;
+	border-radius: 5px;
 	background-color: #F8F5F5;
 	border: 1px solid lightgray;
 	margin-top: 20px;
 	font-family: 'Jost', sans-serif;
 	color: rgba(0, 0, 0, 0.7);
 	padding: 5px;
-	transition: 0.5s;
-}
-
-.login-input:hover {
-	box-shadow: 5px 5px black;
 }
 
 .login-input::placeholder {
@@ -526,14 +627,8 @@ form{
 	background-color: #F8F5F5;
 	border-radius: 6px;
 	border: 1px solid lightgray;
+	box-shadow: 0px 3px gray;
 	margin-top: 30px;
-	transition: 0.5s;
-}
-
-#submit-login:hover {
-	box-shadow: 0px 3px black;
-	background-color: #10F510;
-	border: 0px transparent;
 }
 
 #img-login{
@@ -741,62 +836,4 @@ form{
 	font-style: normal;
 	text-decoration: none;
 	color: #000;
-}
-
-/* Fim da página de exames */
-
-/* Estilização da página dos resultados */
-
-#pagina-resultado {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-#container-resultado {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-}
-
-#container-bt-imprimir {
-	display: flex;
-	align-items: center;
-	justify-content: right;
-	margin: 20px;
-	width: 30%;
-}
-
-#bt-imprimir {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #DEDEDE;
-	border-radius: 10px;
-	box-shadow: 1px 1px gray;
-	height: 30px;
-	width: 80px;
-}
-
-#bt-imprimir ion-icon {
-	color: #000;
-}
-
-#pdf {
-	height: 70vh;
-	margin: 30px;
-	width: 30%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #8E8E8E;
-}
-
-#pdf p {
-	font-family: 'Jost', sans-serif;
-	font-weight: 500;
-	color: rgba(0, 0, 0, 0.5);
 }
