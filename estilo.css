@@ -7,7 +7,7 @@
 	justify-content: space-between;
 	padding: 0px 30px;
 	align-items: center;
-	background-color: #FFF;
+	background-color: rgba(0, 98, 174, 0.71);
 }
 
 #header-home img {
@@ -741,4 +741,62 @@ form{
 	font-style: normal;
 	text-decoration: none;
 	color: #000;
+}
+
+/* Fim da página de exames */
+
+/* Estilização da página dos resultados */
+
+#pagina-resultado {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#container-resultado {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#container-bt-imprimir {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin: 20px;
+	width: 30%;
+}
+
+#bt-imprimir {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #DEDEDE;
+	border-radius: 10px;
+	box-shadow: 1px 1px gray;
+	height: 30px;
+	width: 80px;
+}
+
+#bt-imprimir ion-icon {
+	color: #000;
+}
+
+#pdf {
+	height: 70vh;
+	margin: 30px;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #8E8E8E;
+}
+
+#pdf p {
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.5);
 }
