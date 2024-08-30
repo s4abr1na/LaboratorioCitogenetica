@@ -121,7 +121,7 @@ li{
 	width: 350px;
 	height: 400px;
 	border-radius: 8px;
-	box-shadow: 0px 4px 8px #CCC;
+	box-shadow: 0px 4px 8px #404040;
 	transition: 0.5s;
 	display: flex;
 	flex-direction: column;
@@ -134,7 +134,16 @@ li{
 	box-shadow: 8px 16px 26px #CCC;
 }
 
+.card img {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
 .main-card-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
 	background-color: #0062AE;
 	width: 350px;
 	border-bottom-right-radius: 8px;
@@ -178,31 +187,11 @@ li{
 .card-unidades {
 	display: flex;
 	background-color: #FFF;
-	/*width: 400px;
-	height: 450px;*/
 	align-items: center;
 	justify-content: end;
 	margin: 20px 20px;
-	/*flex-direction: column;*/
 	border-radius: 8px;
 }
-
-
-/*.card-content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #D9D9D9;
-	width: 400px;
-	height: 50px;
-	font-family: 'Jost', sans-serif;
-	color: #000;
-	font-size: 1rem;
-	font-weight: 400;
-	text-align: center;
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
-}*/
 
 .logo-unidade{
 	width: 300px;
@@ -388,7 +377,7 @@ li{
 
 .contatos-botao{
 	Display: grid;
-	Align-itens: center;
+	align-items: center;
 	Justify-content: center;
 	flex-direction: center;
 	padding: 30px;
@@ -400,7 +389,6 @@ li{
     align-items: center;
     gap: 20px; 
     padding: 20px;
-    background-color: 
     border: 1px solid #ddd;
     border-radius: 10px; 
 }
@@ -836,4 +824,417 @@ form{
 	font-style: normal;
 	text-decoration: none;
 	color: #000;
+}
+
+/* Estilização da página dos resultados */
+
+#pagina-resultado {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#container-resultado {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#container-bt-imprimir {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin: 20px;
+	width: 30%;
+}
+
+#bt-imprimir {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #DEDEDE;
+	border-radius: 10px;
+	box-shadow: 1px 1px gray;
+	height: 30px;
+	width: 80px;
+}
+
+#bt-imprimir ion-icon {
+	color: #000;
+}
+
+#pdf {
+	height: 70vh;
+	margin: 30px;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #8E8E8E;
+}
+
+#pdf p {
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 430px) {
+	#header-home {
+        flex-direction: column;
+		width: 100%;
+        padding: 10px;
+    }
+
+    #header-home img {
+        height: 120px;
+        width: 200px;
+    }
+
+    #header-home h1, #header-home h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+		width: 100%;
+        padding: 10px;
+    }
+
+    .a-menu {
+        margin: 10px 0px;
+    }
+
+    #home-main {
+        padding: 10px;
+    }
+
+    #home-main h2 {
+        font-size: 2rem;
+    }
+
+    #home-main article {
+        padding: 20px;
+    }
+
+    ul {
+        padding: 10px;
+    }
+
+    #container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card {
+        width: 300px;
+        height: auto;
+        margin: 10px;
+    }
+
+	.imagem-card {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .main-card-content {
+        width: 100%;
+    }
+
+	#pag-unidades {
+		width: 100%;
+	}
+
+    #container-unidades {
+        width: 100%;
+    }
+
+    .card-unidades {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+	.logo-unidade {
+        width: 100%;
+        max-width: 250px; 
+        height: auto;
+    }
+
+    .coluna-texto-unidade p, .coluna-texto-unidade h2 {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+	#pag-como-chegar {
+		justify-content: center;
+		align-items: center;
+	}
+
+    #pag-como-chegar iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #info-loc {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .texto-endereço, #info-loc img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #pag-perguntas, #pag-duvidas {
+        padding: 10px;
+        height: auto;
+		width: 100%;
+    }
+
+    .card-perguntas {
+		width: 90%;
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 8px;
+        height: auto;
+    }
+
+    .container-duvida {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contatos {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .contatos-botao {
+        padding: 20px;
+    }
+
+    .logo-rodape {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+	/* Ajusta a flexibilidade do container principal */
+    #container-registro {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+    }
+
+    /* Ajusta o bloco de registro para ocupar melhor o espaço */
+    #bloco-registro {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: auto; /* Permite que a altura se ajuste automaticamente */
+        padding: 20px; /* Adiciona padding para melhor espaçamento */
+    }
+
+    /* Ajusta o tamanho do formulário */
+    #form-registro {
+        width: 90%; /* Ajusta a largura do formulário */
+        max-width: 350px; /* Define um tamanho máximo */
+    }
+
+    /* Ajusta o tamanho dos inputs */
+    .registro-input {
+        width: 100%; /* Ocupa toda a largura do formulário */
+        max-width: 350px; /* Define um tamanho máximo */
+    }
+
+    /* Ajusta a imagem de registro para manter a proporção */
+    #imagem-registro {
+        width: 100%; /* Ajusta a largura para ocupar o espaço disponível */
+        max-width: 350px; /* Define um tamanho máximo */
+        height: auto; /* Mantém a proporção da imagem */
+        position: relative; /* Ajusta a posição para o layout em coluna */
+        bottom: auto; /* Remove a posição fixa do fundo */
+        right: auto; /* Remove a posição fixa à direita */
+        margin-top: 20px; /* Adiciona espaçamento acima da imagem */
+    }
+
+    /* Ajusta o botão de voltar */
+    .bt-voltar {
+        position: relative; /* Remove a posição fixa */
+        top: auto; /* Remove a posição fixa superior */
+        right: auto; /* Remove a posição fixa à direita */
+        margin-top: 20px; /* Adiciona espaçamento acima */
+    }
+
+	/* Ajusta a flexibilidade do container principal */
+    #container-login {
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        padding: 20px; /* Adiciona padding para espaçamento */
+    }
+
+    /* Ajusta o botão de voltar */
+    .bt-voltar-login {
+        position: relative; /* Remove a posição fixa */
+        top: auto; /* Remove a posição fixa superior */
+        left: auto; /* Remove a posição fixa à esquerda */
+        margin-bottom: 20px; /* Adiciona espaçamento abaixo */
+    }
+
+    /* Ajusta o bloco de texto de login */
+    #bloco-texto-login {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: 60vh; /* Permite que a altura se ajuste automaticamente */
+        padding: 20px; /* Adiciona padding para melhor espaçamento */
+    }
+
+    /* Ajusta o formulário */
+    form {
+        width: 90%; /* Ajusta a largura do formulário */
+        max-width: 350px; /* Define um tamanho máximo */
+    }
+
+    /* Ajusta o tamanho dos inputs de login */
+    .login-input {
+        width: 100%; /* Ocupa toda a largura do formulário */
+        max-width: 350px; /* Define um tamanho máximo */
+    }
+
+    /* Ajusta o bloco de imagem de login */
+    #bloco-imagem-login, #img-login-div {
+        width: 100%; /* Ajusta a largura para ocupar o espaço disponível */
+        height: 40vh; /* Permite que a altura se ajuste automaticamente */
+        margin-left: 0; /* Remove a margem à esquerda */
+    }
+
+    #img-login {
+        width: 100%; /* Ajusta a imagem para ocupar a largura do contêiner */
+        max-width: 350px; /* Define um tamanho máximo para a imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        margin: 0 auto; /* Centraliza a imagem */
+    }
+
+    /* Ajusta os links de login */
+    .link-login {
+        flex-direction: column; /* Alinha os links verticalmente */
+        margin: 10px 0; /* Ajusta o espaçamento vertical */
+    }
+
+    .a-login {
+        margin: 10px 0; /* Ajusta o espaçamento para os links */
+    }
+
+	/* Ajusta a navbar */
+    .navbar {
+		flex-direction: row;
+        padding: 10px;
+    }
+
+    /* Ajusta o perfil do usuário */
+    .user-profile {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* Ajusta o box de situação */
+    #box-situacao .titulo {
+        font-size: 2rem;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Ajusta o box de interação */
+    #box-interacao {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Ajusta o botão de adicionar exame */
+    #bt-add-exame {
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+    }
+
+    /* Ajusta a barra de pesquisa */
+    #barra-pesquisa {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px auto;
+    }
+
+    #barra-pesquisa input {
+        width: calc(100% - 40px); /* Ajusta a largura para incluir margens e ícones */
+    }
+
+    /* Ajusta os filtros */
+    #filtros {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px auto;
+    }
+
+    #filtros p {
+        font-size: 1.2rem;
+    }
+
+    /* Ajusta a tabela de pacientes */
+    #tabela-pacientes {
+        width: 100%;
+    }
+
+    /* Ajusta os cards de laboratório e pronto */
+    .card-lab, .card-pronto {
+        width: 100%;
+        max-width: 400px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    /* Ajusta o botão home */
+    .bt-home {
+        width: 100%;
+        max-width: 200px;
+        margin: 20px auto;
+    }
+
+	/* Ajusta o container de resultados */
+    #container-resultado {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Ajusta o container do botão de imprimir */
+    #container-bt-imprimir {
+        width: 100%; /* Ocupa toda a largura disponível */
+        justify-content: center; /* Centraliza o botão */
+        margin: 10px 0; /* Ajusta o espaçamento vertical */
+    }
+
+    /* Ajusta o botão de imprimir */
+    #bt-imprimir {
+        width: 100px; /* Aumenta a largura para melhor acessibilidade */
+        height: 40px; /* Aumenta a altura para melhor acessibilidade */
+    }
+
+    /* Ajusta o PDF */
+    #pdf {
+        width: 90%; /* Ocupa a maior parte da largura disponível */
+        height: 60vh; /* Ajusta a altura para caber melhor em telas menores */
+        margin: 20px 0; /* Ajusta o espaçamento vertical */
+    }
+
+    /* Ajusta o texto dentro do PDF */
+    #pdf p {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    }
 }
