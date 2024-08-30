@@ -517,8 +517,8 @@ footer a:hover{
 }
 
 #imagem-registro {
-	height: 549px;
-	width: 493px;
+	height: 80%;
+	width: 35%;
 	position: absolute;
 	bottom: 0;
 	right: 5px;
