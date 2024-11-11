@@ -112,14 +112,15 @@ li{
 
 .imagem-card{
 	width: 350px;
-	height: 400px;
+	max-height: 350px;
+	height: 350px;
 }
 
 .card{
 	background-color: #CCC;
 	margin: 10px;
 	width: 350px;
-	height: 400px;
+	height: 350px;
 	border-radius: 8px;
 	box-shadow: 0px 4px 8px #404040;
 	transition: 0.5s;
