@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0062ae;
+}
+
+.logo {
+  width: 190px;
+  height: 100px;
+}
+
+.user-profile {
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-weight: 200;
+}
+
+#box-situacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+#box-situacao .titulo {
+  color: #6e6e6e;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+#box-interacao {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  width: fit-content;
+  background-color: #fff;
+  width: 61%;
+  margin: 15px 0px 30px 0px;
+}
+
+#bt-add-exame {
+  background-color: #e2e2e2;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 2px lightgray;
+  margin: 10px 0px;
+}
+
+#add-box {
+  color: #f2f2f2;
+  background-color: #aaaaaa;
+  margin-right: 10px;
+}
+
+#bt-add-exame p {
+  color: #333333;
+  opacity: 0.81;
+}
+
+/* #barra-pesquisa {
+  background-color: #dedede;
+  width: 750px;
+  height: 50px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 10px 0px;
+}
+
+#icon-lupa {
+  color: #3e3e3e;
+  margin-left: 20px;
+}
+
+#barra-pesquisa input {
+  border: 0px transparent;
+  background-color: #dedede;
+  width: 700px;
+  height: 35px;
+  color: #333333;
+  margin-left: 7px;
+}
+
+#filtros {
+  display: flex;
+  background-color: #0062ae;
+  align-items: center;
+  justify-content: space-around;
+  width: 750px;
+  height: 50px;
+  border-radius: 8px;
+  margin: 10px 0px;
+}
+
+#filtros p {
+  color: white;
+  font-size: 1.4rem;
+}
+
+#filtros p span {
+  margin-left: 4px;
+} */
+
+#tabela-pacientes {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.card-lab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1dac4;
+  width: 800px;
+  height: 75px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.card-lab p {
+  color: #000;
+  font-weight: 500;
+}
+
+.card-pronto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 98, 174, 0.71);
+  width: 800px;
+  height: 75px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.card-pronto p {
+  color: #000;
+  font-weight: 500;
+}
+
+.bt-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f5f5;
+  box-shadow: 0px 3px gray;
+  border-radius: 22px;
+  height: 35px;
+  width: 250px;
+  margin: 50px 0px;
+}
+
+.bt-home a {
+  font-style: normal;
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  display: flex;
+  background-color: #0062ae;
+  padding: 10px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffed00;
+}
+
+@media (max-width: 430px) {
+  /* Ajusta a navbar */
+  .navbar {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  /* Ajusta o perfil do usuário */
+  .user-profile {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* Ajusta o box de situação */
+  #box-situacao .titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* Ajusta o box de interação */
+  #box-interacao {
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Ajusta o botão de adicionar exame */
+  #bt-add-exame {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+  }
+
+  /* Ajusta a barra de pesquisa */
+  #barra-pesquisa {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+
+  #barra-pesquisa input {
+    width: calc(100% - 40px);
+    /* Ajusta a largura para incluir margens e ícones */
+  }
+
+  /* Ajusta os filtros */
+  #filtros {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+
+  #filtros p {
+    font-size: 1.2rem;
+  }
+
+  /* Ajusta a tabela de pacientes */
+  #tabela-pacientes {
+    width: 100%;
+  }
+
+  /* Ajusta os cards de laboratório e pronto */
+  .card-lab,
+  .card-pronto {
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  /* Ajusta o botão home */
+  .bt-home {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+  }
+}

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0062ae;
+}
+
+.logo {
+  width: 190px;
+  height: 100px;
+}
+
+.user-profile {
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-weight: 200;
+}
+
+#pagina-resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container-resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#container-bt-imprimir {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 20px;
+  width: 30%;
+}
+
+#bt-imprimir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dedede;
+  border-radius: 10px;
+  box-shadow: 1px 1px gray;
+  height: 37px;
+  width: 100px;
+}
+
+#bt-imprimir ion-icon {
+  color: #000;
+}
+
+#pdf {
+  height: 70vh;
+  margin: 30px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8e8e8e;
+}
+
+#pdf p {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bt-home {
+  text-decoration: none;
+}
+
+.bt-home span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  color: #000;
+  background-color: #f8f5f5;
+  box-shadow: 0px 3px gray;
+  border-radius: 22px;
+  height: 35px;
+  width: 250px;
+  margin: 50px 0px;
+}
+
+footer {
+  display: flex;
+  background-color: #0062ae;
+  padding: 10px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffed00;
+}
+
+@media (max-width: 430px) {
+  /* Ajusta o container de resultados */
+  #container-resultado {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Ajusta o container do botão de imprimir */
+  #container-bt-imprimir {
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    justify-content: center;
+    /* Centraliza o botão */
+    margin: 10px 0;
+    /* Ajusta o espaçamento vertical */
+  }
+
+  /* Ajusta o botão de imprimir */
+  #bt-imprimir {
+    width: 100px;
+    /* Aumenta a largura para melhor acessibilidade */
+    height: 40px;
+    /* Aumenta a altura para melhor acessibilidade */
+  }
+
+  /* Ajusta o PDF */
+  #pdf {
+    width: 90%;
+    /* Ocupa a maior parte da largura disponível */
+    height: 60vh;
+    /* Ajusta a altura para caber melhor em telas menores */
+    margin: 20px 0;
+    /* Ajusta o espaçamento vertical */
+  }
+
+  /* Ajusta o texto dentro do PDF */
+  #pdf p {
+    font-size: 1rem;
+    /* Ajusta o tamanho da fonte para melhor legibilidade */
+  }
+}

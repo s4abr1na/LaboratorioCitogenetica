@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#header-home {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
+  background-color: #fff;
+  background-color: #488bbf;
+}
+
+#header-home img {
+  height: 160px;
+  width: 250px;
+}
+
+#header-home h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#header-home h2 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  background-color: #0062ae;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 190px;
+  height: 100px;
+}
+
+.a-menu {
+  margin: 0px 60px;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  transition: .2s;
+}
+
+.a-menu:hover {
+  color: #000;
+}
+
+#home-main {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home-main h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+#home-main article {
+  padding: 50px;
+}
+
+#home-main article p {
+  font-size: 1.1rem;
+  color: #000;
+  text-align: justify;
+  font-weight: 350;
+}
+
+ul {
+  list-style-type: circle;
+  padding: 20px 50px;
+}
+
+li {
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+#container {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: fit-content;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #0062ae;
+  margin: 10px;
+  width: 350px;
+  height: 500px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 8px #404040;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 50px;
+}
+
+.card:hover {
+  box-shadow: 8px 16px 26px #ccc;
+}
+
+.imagem-card {
+  width: 350px;
+}
+
+.text-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  height: 100px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#pag-unidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0062ae;
+}
+
+#pag-unidades h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.7rem;
+  margin: 80px 0px 40px 0px;
+}
+
+#container-unidades {
+  display: flex;
+  width: 850px;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px 80px 0px;
+}
+
+.card-unidades {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: end;
+  margin: 20px 20px;
+  border-radius: 8px;
+}
+
+.logo-unidade {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+
+.coluna-texto-unidade p {
+  text-align: justify;
+  padding: 30px;
+  font-size: 1.1rem;
+}
+
+.coluna-texto-unidade h2 {
+  text-align: center;
+  padding: 20px;
+  color: #000;
+}
+
+#pag-como-chegar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pag-como-chegar h1 {
+  color: rgba(0, 0, 0, 0.67);
+  font-weight: 500;
+  font-size: 2.2rem;
+  margin: 40px;
+}
+
+#pag-como-chegar iframe {
+  width: 700px;
+  height: 450px;
+  border-radius: 15px;
+}
+
+#info-loc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90vw;
+  justify-content: space-between;
+}
+
+.texto-endereço {
+  background-color: #4685b6;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.texto-endereço p {
+  color: #fff;
+  padding: 30px;
+  font-size: 1.1rem;
+}
+
+#info-loc img {
+  height: 400px;
+  width: 500px;
+}
+
+#info-loc h2 {
+  background-color: #e6e6e6;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#pag-perguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0062ae;
+  height: 700px;
+}
+
+#pag-perguntas h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 450;
+  margin-bottom: 40px;
+}
+
+#pag-perguntas p {
+  font-size: 1.1rem;
+}
+
+.card-perguntas {
+  display: flex;
+  background-color: #f8f5f5;
+  height: 50px;
+  width: 600px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px 20px;
+  color: rgba(0, 0, 0, 0.46);
+}
+
+#pag-contatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 20px 20px;
+}
+
+.container-contatos {
+  background-color: #e3efff;
+  height: 100%;
+  width: 80%;
+  border-radius: 50px;
+}
+
+.container-contatos p {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+#art-contatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#art-contatos p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#art-contatos h1 {
+  font-size: 2.5rem;
+  font-weight: 450;
+}
+
+.contatos-botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  background-color: #4175b9;
+  border-radius: 30px;
+  padding: 0 20px;
+  position: relative;
+  transition: .2s;
+}
+
+.contato:hover {
+  box-shadow: 2px 2px #AEAEAE;
+}
+
+.contato span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.contato p {
+  color: #FFF;
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.logo-rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.logo-rodape img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+footer {
+  display: flex;
+  background-color: #0062ae;
+  padding: 10px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffed00;
+}
+
+@media (max-width: 430px) {
+  #header-home {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #header-home img {
+    height: 120px;
+    width: 200px;
+  }
+
+  #header-home h1,
+  #header-home h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .a-menu {
+    margin: 10px 0px;
+  }
+
+  #home-main {
+    padding: 10px;
+  }
+
+  #home-main h2 {
+    font-size: 2rem;
+  }
+
+  #home-main article {
+    padding: 20px;
+  }
+
+  ul {
+    padding: 10px;
+  }
+
+  #container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+  }
+
+  .imagem-card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .main-card-content {
+    width: 100%;
+  }
+
+  #pag-unidades {
+    width: 100%;
+  }
+
+  #container-unidades {
+    width: 100%;
+  }
+
+  .card-unidades {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .logo-unidade {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .coluna-texto-unidade p,
+  .coluna-texto-unidade h2 {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  #pag-como-chegar {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pag-como-chegar iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  #info-loc {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .texto-endereço,
+  #info-loc img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  #pag-perguntas,
+  #pag-duvidas {
+    padding: 10px;
+    height: auto;
+    width: 100%;
+  }
+
+  .card-perguntas {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 8px;
+    height: auto;
+  }
+
+  .container-duvida {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .contatos {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .contatos-botao {
+    padding: 20px;
+  }
+
+  .logo-rodape {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+}
