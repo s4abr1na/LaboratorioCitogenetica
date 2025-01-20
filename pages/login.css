@@ -136,7 +136,7 @@ form {
   color: #c8dbeb;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1024px) {
   #container-login {
     flex-direction: column;
     padding: 20px;

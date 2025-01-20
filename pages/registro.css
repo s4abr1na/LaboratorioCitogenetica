@@ -98,68 +98,42 @@
   right: 5px;
 }
 
-@media (max-width: 430px) {
-  /* Ajusta a flexibilidade do container principal */
+@media (max-width: 1024px) {
   #container-registro {
     flex-direction: column;
-    /* Organiza os elementos em coluna */
     align-items: center;
-    /* Centraliza horizontalmente */
   }
 
-  /* Ajusta o bloco de registro para ocupar melhor o espaço */
   #bloco-registro {
     width: 100%;
-    /* Ocupa toda a largura disponível */
     height: auto;
-    /* Permite que a altura se ajuste automaticamente */
     padding: 20px;
-    /* Adiciona padding para melhor espaçamento */
   }
 
-  /* Ajusta o tamanho do formulário */
   #form-registro {
     width: 90%;
-    /* Ajusta a largura do formulário */
     max-width: 350px;
-    /* Define um tamanho máximo */
   }
 
-  /* Ajusta o tamanho dos inputs */
   .registro-input {
     width: 100%;
-    /* Ocupa toda a largura do formulário */
     max-width: 350px;
-    /* Define um tamanho máximo */
   }
 
-  /* Ajusta a imagem de registro para manter a proporção */
   #imagem-registro {
     width: 100%;
-    /* Ajusta a largura para ocupar o espaço disponível */
     max-width: 350px;
-    /* Define um tamanho máximo */
     height: auto;
-    /* Mantém a proporção da imagem */
     position: relative;
-    /* Ajusta a posição para o layout em coluna */
     bottom: auto;
-    /* Remove a posição fixa do fundo */
     right: auto;
-    /* Remove a posição fixa à direita */
     margin-top: 20px;
-    /* Adiciona espaçamento acima da imagem */
   }
 
-  /* Ajusta o botão de voltar */
   .bt-voltar {
     position: relative;
-    /* Remove a posição fixa */
     top: auto;
-    /* Remove a posição fixa superior */
     right: auto;
-    /* Remove a posição fixa à direita */
     margin-top: 20px;
-    /* Adiciona espaçamento acima */
   }
 }
